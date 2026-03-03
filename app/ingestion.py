@@ -3,8 +3,9 @@ import pandas as pd
 def extract_data():
     data = {
         "date": ["2025-01-03"],
-        "client_id": [1],
-        "campaign_id": [1],
+        "client_name": ["Client A"],
+        "channel_name": ["Google Ads"],
+        "campaign_name": ["Campaign 1"],
         "impressions": [2000],
         "clicks": [250],
         "cost": [600.00],

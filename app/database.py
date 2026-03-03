@@ -1,13 +1,5 @@
 from sqlalchemy import create_engine
-from app.config import DB_CONFIG
+from app.config import DATABASE_URL
 
 def get_engine():
-    connection_string = (
-        f"postgresql://{DB_CONFIG['user']}:"
-        f"{DB_CONFIG['password']}@"
-        f"{DB_CONFIG['host']}:"
-        f"{DB_CONFIG['port']}/"
-        f"{DB_CONFIG['name']}"
-    )
-
-    return create_engine(connection_string, echo=False)
+    return create_engine(DATABASE_URL, echo=False)

@@ -1,3 +1,5 @@
+-- Reference only.
+-- Schema is officially managed via Alembic migrations.
 CREATE TABLE dim_client (
     client_id SERIAL PRIMARY KEY,
     client_name VARCHAR(100) NOT NULL,
