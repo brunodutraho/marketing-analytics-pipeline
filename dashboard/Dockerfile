@@ -1,5 +1,6 @@
 FROM metabase/metabase:latest
 
-EXPOSE 3000
+ENV MB_JETTY_PORT=$PORT
+ENV MB_DB_FILE=/metabase-data/metabase.db
 
-CMD ["/app/run_metabase.sh"]
+EXPOSE 3000
